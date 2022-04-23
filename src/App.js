@@ -3,7 +3,6 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/header';
 import Options from './components/options';
 
-import { Container } from 'react-bootstrap';
 
 function App() {
   return (
@@ -11,10 +10,6 @@ function App() {
    
       < Header />
       <Options name = "Dataset"/>
-
-      <header className="App-header">
-    
-      </header>
     </div>
   );
 }
