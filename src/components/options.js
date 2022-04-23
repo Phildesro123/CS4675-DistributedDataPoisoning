@@ -1,6 +1,6 @@
 import { Button, Card, Col ,Row ,Container, Form } from "react-bootstrap"; 
 
-function Options(props) {
+function Options() {
     return (
       <div className="Controls">
         <Card>
@@ -18,14 +18,14 @@ function Options(props) {
           Epoch Rounds
           <Form.Select aria-label={`Choose the number of epochs (rounds)`}>
             <option>Choose a number of epoch</option>
-            <option value= "200">200</option>
-            <option value= "300">300</option>
-            <option value= "400">400</option>                        
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>                        
           </Form.Select>
           </Col>
           <Col>
           Model
-          <Form.Select aria-label={`Choose the number of epochs (rounds)`}>
+          <Form.Select aria-label={`Choose the number of epochs (rounds)`} size = "sm">
             <option>Choose a model</option>
             <option value ="MNISTCNN">MNIST-CNN</option>
             <option value ="CIFARCNN">CIFAR10-CNN</option>
@@ -40,7 +40,7 @@ function Options(props) {
             <option value ="def2">Neural Cleanser</option>
           </Form.Select>
           </Col>
-          <Button type="button">Confirm</Button>
+          <Button type="button" onClick={()=>console.log('rest')}>Confirm</Button>
 
           </Row>
 

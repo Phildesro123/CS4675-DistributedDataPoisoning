@@ -9,7 +9,7 @@ function App() {
     <div className="App">
    
       < Header />
-      <Options name = "Dataset"/>
+      <Options/>
     </div>
   );
 }
