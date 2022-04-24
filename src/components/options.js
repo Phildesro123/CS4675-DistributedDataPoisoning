@@ -1,15 +1,17 @@
 import { Button, Card, Col ,Row ,Container, Form } from "react-bootstrap"; 
+import React, {useState} from "react";
 
 function Options() {
+  const [option1, setOption1] = useState('test')
     return (
       <div className="Controls">
         <Card>
-        <Form>
+        <Form onSubmit={()=>setOption1('ttttttt')}>
           <Row>     
             <Col >
             Dataset
             <Form.Select aria-label={`Choose a Dataset`}>
-            <option>{`Choose a Dataset`}</option>
+            <option>{option1}</option>
             <option value='MNIST'>MNIST</option>
             <option value='CIFAR10'>CIFAR-10</option>            
           </Form.Select>
@@ -40,7 +42,7 @@ function Options() {
             <option value ="def2">Neural Cleanser</option>
           </Form.Select>
           </Col>
-          <Button type="button" onClick={()=>console.log('rest')}>Confirm</Button>
+          <Button type="button" onClick={()=>setOption1('ttttttt')}>Confirm</Button>
 
           </Row>
 
