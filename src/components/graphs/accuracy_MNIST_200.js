@@ -1,24 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import Plot from 'react-plotly.js'
-
-function Result1() {
-    const 
-    return ( 
-    <div> 
+import React from "react";
+import Plot from "react-plotly.js";
+import { no_poisoning } from "./data/accuracy/no_poison_200";
+import { poisoning } from "./data/accuracy/poison_200";
+function Accuracy_MNIST_200() {
+  return (
+    <div>
       <Plot
-        data={[
-          {
-            x: [1, 2, 3],
-            y: [2, 6, 3],
-            type: 'scatter',
-            mode: 'lines+markers',
-            marker: {color: 'red'},
+        data={[no_poisoning, poisoning]}
+        layout={{
+          title: "A Fancy Plot",
+          xaxis: {
+            title: "Epochs (Round number)",
           },
-          {type: 'bar', x: [1, 2, 3], y: [2, 5, 3]},
-        ]}
-        layout={{width: 320, height: 240, title: 'A Fancy Plot'}}
+        }}
       />
-    </div> );
+    </div>
+  );
 }
 
-export default Result1;
+export default Accuracy_MNIST_200;
