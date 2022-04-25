@@ -1,4 +1,4 @@
-# Projec Introduction
+# Project Introduction
 
 This project is titled "Data Poisoning in Distributed Learning Systems", and it is a group semester project for CS4675 at the Georgia Institute of Technology.
 
