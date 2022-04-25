@@ -36,9 +36,9 @@ class Options extends Component {
   render() {
     return (
       <div className="Controls">
-        <Card>
+        
         <Form>
-          <Row>     
+          <Row style={{paddingVertical:10}}>     
             <Col >
             Attack
             <Form.Select value={this.state.selectAttack} onChange={this.selectChange.bind(this)} aria-label={`Choose an attack type`}>
@@ -67,7 +67,7 @@ class Options extends Component {
           </Form.Select>
           </Col>
           </Row>
-          <Row>
+          <Row style={{paddingVertical:10}}>
           <Col> 
           Model
           <Form.Select aria-label={`Choose the attack type`} >
@@ -85,12 +85,17 @@ class Options extends Component {
             })}  
           </Form.Select>
           </Col>
-          <Button type="button" onClick={()=>console.log('rest')}>Confirm</Button>
 
           </Row>
 
+          <Row className="mt-20">
+            <Col>
+              <Button style={{ backgroundColor: "#CCD4F2" }} type="button" onClick={()=>console.log('rest')}>Confirm</Button>
+            </Col>
+          </Row>
+
         </Form>
-        </Card> 
+        
       </div>
     )
   }
