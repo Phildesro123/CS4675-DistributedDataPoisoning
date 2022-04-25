@@ -19,7 +19,7 @@ class Options extends Component {
     this.setState({
       Attack: [
         {name: 'Label Flipping', Epochs: [50, 100, 200], Dataset: ['MNIST'], Defense: ['Update Evaluator'], Model: ['CNN']},
-        {name: 'Backdoor', Epochs: [10, 25, 50], Dataset: ['MNIST', 'CIFAR-10'], Defense: ['Neural Cleanser'], Model: ['CNN']}
+        {name: 'Backdoor', Epochs: [10, 20, 30], Dataset: ['MNIST', 'CIFAR-10'], Defense: ['Neural Cleanser'], Model: ['CNN']}
       ],
     });
   }
