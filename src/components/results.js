@@ -1,6 +1,9 @@
+import React, { useState, useEffect } from 'react';
 
-function Results() {
-    return (<div></div>  );
+function Results(props) {
+    return (<div>
+        {}
+    </div>  );
 }
 
 export default Results;
