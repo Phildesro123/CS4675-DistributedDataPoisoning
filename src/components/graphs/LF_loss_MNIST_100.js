@@ -5,7 +5,12 @@ import { LR } from './data/loss/poision_100/poison_100';
 
 function Loss_MNIST_100() {
     return ( <div>
-        <Plot data ={[LR]}/>
+        <Plot data ={[LR]} layout={{
+          title: "Loss",
+          xaxis: {
+            title: "Epochs (Round number)",
+          },
+        }}/>
 
     </div> );
 }

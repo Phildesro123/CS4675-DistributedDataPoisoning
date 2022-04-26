@@ -23,4 +23,5 @@ export const LR = {
     0.571918741,
   ],
   mode: "lines+marker",
+  name: "poisoned"
 };
