@@ -30,30 +30,44 @@ function Results(props) {
         case 'Label Flipping':
             if (props.epochs === 50) {
                 return <div>
-                    <Accuracy_MNIST_50/>
-                    <Loss_MNIST_50/>
-                    <Precision_MNIST_50/>
-                    <Recall_MNIST_50/>
-                    <Defense_MNIST_50/>
+                    <Card>
+                        <Card.Header as="h5">Quantitative Evaluation</Card.Header>
+                        <Card.Body style={{ backgroundColor: "#CCD4F2", justifyContent: 'center'}}>
+                            <Accuracy_MNIST_50/>
+                            <Loss_MNIST_50/>
+                            <Precision_MNIST_50/>
+                            <Recall_MNIST_50/>
+                            <Defense_MNIST_50/>
+                        </Card.Body>
+                    </Card>
                     </div>
             }
             if (props.epochs === 100) {
                 return <div>
-                    <Accuracy_MNIST_100/>
-                    <Loss_MNIST_100/>
-                    <Precision_MNIST_100/>
-                    <Recall_MNIST_100/>
-                    <Defense_MNIST_100/>
+                    <Card>
+                        <Card.Header as="h5">Quantitative Evaluation</Card.Header>
+                        <Card.Body style={{ backgroundColor: "#CCD4F2" }}>
+                            <Accuracy_MNIST_100/>
+                            <Loss_MNIST_100/>
+                            <Precision_MNIST_100/>
+                            <Recall_MNIST_100/>
+                            <Defense_MNIST_100/>    
+                        </Card.Body>
+                    </Card>
                 </div>
             }
             if (props.epochs === 200) {
                 return <div>
-                    <Accuracy_MNIST_200/>
-                    <Loss_MNIST_200/>
-                    <Precision_MNIST_200/>
-                    <Recall_MNIST_200/>
-                    <Defense_MNIST_200/>
-                    
+                    <Card>
+                        <Card.Header as="h5">Quantitative Evaluation</Card.Header>
+                        <Card.Body style={{ backgroundColor: "#CCD4F2" }}>
+                            <Accuracy_MNIST_200/>
+                            <Loss_MNIST_200/>
+                            <Precision_MNIST_200/>
+                            <Recall_MNIST_200/>
+                            <Defense_MNIST_200/>
+                        </Card.Body>
+                    </Card>          
                 </div>
             } else {
                 return null;
@@ -62,18 +76,30 @@ function Results(props) {
             if (props.dataset === 'MNIST') {
                 if (props.epochs === 10) {
                     return <div>
-                    <BDMNIST_10/>
-
+                    <Card>
+                        <Card.Header as="h5">Quantitative Evaluation</Card.Header>
+                        <Card.Body style={{ backgroundColor: "#CCD4F2" }}>
+                            <BDMNIST_10/>
+                        </Card.Body>
+                    </Card>                          
                 </div>
                 } else if (props.epochs === 20) {
                     return <div>
-                    <BDMNIST_20/>
-
+                    <Card>
+                        <Card.Header as="h5">Quantitative Evaluation</Card.Header>
+                        <Card.Body style={{ backgroundColor: "#CCD4F2" }}>
+                            <BDMNIST_20/>
+                        </Card.Body>
+                    </Card>  
                 </div>
                 } else if (props.epochs === 30) {
                     return <div>
-                    <BDMNIST_30/>
-
+                    <Card>
+                        <Card.Header as="h5">Quantitative Evaluation</Card.Header>
+                        <Card.Body style={{ backgroundColor: "#CCD4F2" }}>
+                            <BDMNIST_30/>
+                        </Card.Body>
+                    </Card>    
                 </div>
                 } else {
                     return null;
@@ -81,18 +107,30 @@ function Results(props) {
             } else if (props.dataset === 'CIFAR-10') {
                 if (props.epochs === 10) {
                     return <div>
-                    <BDCifar10_10/>
-
+                    <Card>
+                        <Card.Header as="h5">Quantitative Evaluation</Card.Header>
+                        <Card.Body style={{ backgroundColor: "#CCD4F2" }}>
+                            <BDCifar10_10/>
+                        </Card.Body>
+                    </Card>                          
                 </div>
                 } else if (props.epochs === 20) {
                     return <div>
-                    <BDCifar10_20/>
-
+                    <Card>
+                        <Card.Header as="h5">Quantitative Evaluation</Card.Header>
+                        <Card.Body style={{ backgroundColor: "#CCD4F2" }}>
+                            <BDCifar10_20/>
+                        </Card.Body>
+                    </Card>                           
                 </div>
                 } else if (props.epochs === 30) {
                     return <div>
-                    <BDCifar10_30/>
-
+                    <Card>
+                        <Card.Header as="h5">Quantitative Evaluation</Card.Header>
+                        <Card.Body style={{ backgroundColor: "#CCD4F2"}}>
+                            <BDCifar10_30/>
+                        </Card.Body>
+                    </Card>                           
                 </div>
                 } else {
                     return null;
@@ -104,7 +142,7 @@ function Results(props) {
       <div className="Results">    
         <Card>
             <Card.Header as="h5">Quantitative Evaluation</Card.Header>
-            <Card.Body style={{ backgroundColor: "#CCD4F2" }}>
+            <Card.Body style={{ backgroundColor: "#CCD4F2"}}>
                 {graph}
             </Card.Body>
         </Card>
