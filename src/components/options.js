@@ -140,7 +140,7 @@ class Options extends Component {
             </Col>
           </Row>
 
-          <Row style={{ marginBottom:'20px',textAlign: 'center', paddingLeft: 30, paddingRight: 30}}>
+          <Row style={{ marginBottom:'40px',textAlign: 'center', paddingLeft: 30, paddingRight: 30}}>
               <Button
                 style={{ backgroundColor: "#98FB98", color: "#000000", outline: 'none'}}
                 type="button"

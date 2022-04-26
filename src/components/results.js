@@ -32,7 +32,7 @@ function Results(props) {
                 return <div>
                     <Card>
                         <Card.Header as="h5">Quantitative Evaluation</Card.Header>
-                        <Card.Body style={{ backgroundColor: "#CCD4F2", justifyContent: 'center'}}>
+                        <Card.Body style={{ backgroundColor: "#CCD4F2"}}>
                             <Accuracy_MNIST_50/>
                             <Loss_MNIST_50/>
                             <Precision_MNIST_50/>
