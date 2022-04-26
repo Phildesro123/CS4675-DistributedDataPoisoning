@@ -15,4 +15,6 @@ export const poisoning = {
     98.27,
   ],
   mode: "lines+marker",
+  name: 'poisoning'
+
 };
