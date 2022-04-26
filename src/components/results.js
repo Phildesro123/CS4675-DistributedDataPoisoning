@@ -20,7 +20,9 @@ import BDCifar10_30 from './graphs/accuracy_Cifar10_30Backdoor';
 import BDMNIST_10 from './graphs/accuracy_MNIST_10Backdoor';
 import BDMNIST_20 from './graphs/accuracy_MNIST_20Backdoor';
 import BDMNIST_30 from './graphs/accuracy_MNIST_30Backdoor';
-
+import BDCifarfed_25 from './graphs/accuracy_Cifarfed_25Backdoor';
+import BDCifarfed_50 from './graphs/accuracy_Cifarfed_50Backdoor';
+import BDCifarfed_75 from './graphs/accuracy_Cifarfed_75Backdoor'; 
 
 function Results(props) {
     let graph = null;

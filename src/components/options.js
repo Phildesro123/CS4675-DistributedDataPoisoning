@@ -19,8 +19,20 @@ class Options extends Component {
   componentDidMount() {
     this.setState({
       Attack: [
-        {name: 'Label Flipping', Epochs: [50, 100, 200], Dataset: ['MNIST'], Defense: ['Update Evaluator'], Model: ['CNN']},
-        {name: 'Backdoor', Epochs: [10, 20, 30], Dataset: ['MNIST', 'CIFAR-10'], Defense: ['Neural Cleanser'], Model: ['CNN']}
+        {
+          name: "Label Flipping",
+          Epochs: [50, 100, 200],
+          Dataset: ["MNIST"],
+          Defense: ["Update Evaluator"],
+          Model: ["CNN"],
+        },
+        {
+          name: "Backdoor",
+          Epochs: [10, 20, 30],
+          Dataset: ["MNIST", "CIFAR-10"],
+          Defense: ["Neural Cleanser"],
+          Model: ["CNN"],
+        },
       ],
     });
   }
@@ -61,7 +73,7 @@ class Options extends Component {
     return (
       <div className="Controls">
         <Form>
-          <Row style={{ paddingVertical: 10 }}>
+          <Row style={{ paddingBottom: 20 }}>
             <Col>
               Attack
               <Form.Select
@@ -102,7 +114,7 @@ class Options extends Component {
               </Form.Select>
             </Col>
           </Row>
-          <Row style={{ paddingVertical: 10 }}>
+          <Row style={{ paddingBottom: 20 }}>
             <Col>
               Model
               <Form.Select
@@ -128,7 +140,7 @@ class Options extends Component {
             </Col>
           </Row>
 
-          <Row className="mt-20">
+          <Row style={{ marginBottom:'15px',textAlign: 'center' }}>
             <Col>
               <Button
                 style={{ backgroundColor: "#CCD4F2" }}

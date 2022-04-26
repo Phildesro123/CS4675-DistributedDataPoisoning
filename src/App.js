@@ -7,11 +7,11 @@ import React, { useState, useEffect } from 'react';
 function App() {
   const [attack, setAttack] = useState('');
   const [epochs, setEpochs] = useState(0);
-  const [datset, setDataset] = useState('');
+  const [dataset, setDataset] = useState('');
   const [model, setModel] = useState('');
 
   const props = {
-    attack, epochs, datset, model,
+    attack, epochs, dataset, model,
   }
 
   const handleChange = (a,e,d,m) => {
