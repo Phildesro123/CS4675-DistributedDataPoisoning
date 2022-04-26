@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-function Results(props) {
+function Quantitative_Evaluation(props) {
     return (<div>
         {}
     </div>  );
 }
 
-export default Results;
+export default Quantitative_Evaluation;
