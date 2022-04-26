@@ -1,4 +1,4 @@
-import { Button, Card, Col ,Row ,Container, Form } from "react-bootstrap";
+import { Button, Col ,Row , Form } from "react-bootstrap";
 import React, {Component} from "react"; 
 
 class Options extends Component {
@@ -35,11 +35,11 @@ class Options extends Component {
 
   render() {
     return (
-      <div className="Controls">
+      <div className="Controls" style={{paddingBottom:10}}>
         
         <Form>
-          <Row style={{paddingVertical:10}}>     
-            <Col >
+          <Row style={{paddingBottom:20}}>     
+            <Col > 
             Attack
             <Form.Select value={this.state.selectAttack} onChange={this.selectChange.bind(this)} aria-label={`Choose an attack type`}>
             <option>Choose an attack type</option>
@@ -67,7 +67,7 @@ class Options extends Component {
           </Form.Select>
           </Col>
           </Row>
-          <Row style={{paddingVertical:10}}>
+          <Row style={{paddingBottom:20}}>
           <Col> 
           Model
           <Form.Select aria-label={`Choose the attack type`} >
@@ -88,10 +88,8 @@ class Options extends Component {
 
           </Row>
 
-          <Row className="mt-20">
-            <Col>
-              <Button style={{ backgroundColor: "#CCD4F2" }} type="button" onClick={()=>console.log('rest')}>Confirm</Button>
-            </Col>
+          <Row style={{marginLeft:100, marginRight:100, marginBottom:10}}>
+            <Button style={{ backgroundColor: "#CCD4F2"}} type="button" onClick={()=>console.log('rest')}>Confirm</Button>
           </Row>
 
         </Form>

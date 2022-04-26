@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/header';
 import Options from './components/options';
@@ -12,8 +11,8 @@ function App() {
    
       < Header />
       <Container>
-      <Options/>
-      <Results/>
+        <Options/>
+        <Results/>
       </Container>
     </div>
   );
