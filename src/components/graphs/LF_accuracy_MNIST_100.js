@@ -6,7 +6,7 @@ function Accuracy_MNIST_100() {
   return (
     <div>
       <Plot
-        data={[no_poisoning, poisoning]}
+        data={[ poisoning]}
         layout={{
           title: "Accuracy",
           xaxis: {

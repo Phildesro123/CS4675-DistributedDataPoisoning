@@ -10,4 +10,5 @@ export const poisoning = {
     98.21, 98.19, 98.21, 98.21, 98.19, 98.19,
   ],
   mode: "lines+marker",
+  name: 'poisoning'
 };
