@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Project Introduction
+
+This project is titled "Data Poisoning in Distributed Learning Systems", and it is a group semester project for CS4675 at the Georgia Institute of Technology.
+
+This project investigates two different types of data poisoning attacks in distributed learning system: label flipping and backdooring. More specifically, this project tests the severity of these two data poisoning attacks on the accuracy of image recognition in a distributed learning system. Label flipping was performed on one dataset: MNIST. Backdooring was performed on two datasets: MNIST and CIFAR-10. A GUI was created to display the results of the data poisoning attacks combined with the defense algorithm that was used to combat the attack. The GUI displays these results in the form of a plot-ly graph. The graphs are pre-loaded for the sake of time.
+
+# How to Run the Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -8,7 +8,7 @@ function Accuracy_MNIST_200() {
       <Plot
         data={[no_poisoning, poisoning]}
         layout={{
-          title: "A Fancy Plot",
+          title: "Accuracy",
           xaxis: {
             title: "Epochs (Round number)",
           },

@@ -28,4 +28,5 @@ export const no_poisoning = {
     marker: {
       color: "#C8A2C8",
     },
+    name: "non poisoned"
   };

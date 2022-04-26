@@ -33,4 +33,5 @@ export const LR = {
     38.17794, 38.12917, 38.11263,
   ],
   mode: "lines+marker",
+  name: "poisoned"
 };
