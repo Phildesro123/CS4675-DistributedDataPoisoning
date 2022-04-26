@@ -14,15 +14,15 @@ import Precision_MNIST_50 from "./graphs/LF_precision_MNIST_50";
 import Recall_MNIST_100 from "./graphs/LF_recall_MNIST_100";
 import Recall_MNIST_200 from "./graphs/LF_recall_MNIST_200";
 import Recall_MNIST_50 from "./graphs/LF_recall_MNIST_50";
-import BDCifar10_10 from './components/graphs/accuracy_Cifar10_10Backdoor';
-import BDCifar10_20 from './components/graphs/accuracy_Cifar10_20Backdoor';
-import BDCifar10_30 from './components/graphs/accuracy_Cifar10_30Backdoor';
-import BDMNIST_10 from './components/graphs/accuracy_MNIST_10Backdoor';
-import BDMNIST_20 from './components/graphs/accuracy_MNIST_20Backdoor';
-import BDMNIST_30 from './components/graphs/accuracy_MNIST_30Backdoor';
-import BDCifarfed_25 from './components/graphs/accuracy_Cifarfed_25Backdoor';
-import BDCifarfed_50 from './components/graphs/accuracy_Cifarfed_50Backdoor';
-import BDCifarfed_75 from './components/graphs/accuracy_Cifarfed_75Backdoor'; 
+import BDCifar10_10 from './graphs/accuracy_Cifar10_10Backdoor';
+import BDCifar10_20 from './graphs/accuracy_Cifar10_20Backdoor';
+import BDCifar10_30 from './graphs/accuracy_Cifar10_30Backdoor';
+import BDMNIST_10 from './graphs/accuracy_MNIST_10Backdoor';
+import BDMNIST_20 from './graphs/accuracy_MNIST_20Backdoor';
+import BDMNIST_30 from './graphs/accuracy_MNIST_30Backdoor';
+import BDCifarfed_25 from './graphs/accuracy_Cifarfed_25Backdoor';
+import BDCifarfed_50 from './graphs/accuracy_Cifarfed_50Backdoor';
+import BDCifarfed_75 from './graphs/accuracy_Cifarfed_75Backdoor'; 
 
 function Results(props) {
     let graph = null;
