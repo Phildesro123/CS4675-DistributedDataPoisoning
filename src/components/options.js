@@ -16,7 +16,6 @@ class Options extends Component {
       selectEpochs: 0,
     };
   }
-
   componentDidMount() {
     this.setState({
       Attack: [
