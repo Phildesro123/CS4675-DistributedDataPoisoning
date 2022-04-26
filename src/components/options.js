@@ -73,7 +73,7 @@ class Options extends Component {
     return (
       <div className="Controls">
         <Form>
-          <Row style={{ paddingBottom: 20 }}>
+          <Row style={{ paddingBottom: 20, paddingTop: 20, paddingLeft: 20, paddingRight: 20}}>
             <Col>
               Attack
               <Form.Select
@@ -114,7 +114,7 @@ class Options extends Component {
               </Form.Select>
             </Col>
           </Row>
-          <Row style={{ paddingBottom: 20 }}>
+          <Row style={{ paddingBottom: 30, paddingLeft: 20, paddingRight: 20}}>
             <Col>
               Model
               <Form.Select
@@ -140,10 +140,9 @@ class Options extends Component {
             </Col>
           </Row>
 
-          <Row style={{ marginBottom:'15px',textAlign: 'center' }}>
-            <Col>
+          <Row style={{ marginBottom:'40px',textAlign: 'center', paddingLeft: 30, paddingRight: 30}}>
               <Button
-                style={{ backgroundColor: "#CCD4F2" }}
+                style={{ backgroundColor: "#98FB98", color: "#000000", outline: 'none'}}
                 type="button"
                 onClick={() => {
                   this.props.handleChange(
@@ -156,7 +155,6 @@ class Options extends Component {
               >
                 Confirm
               </Button>
-            </Col>
           </Row>
         </Form>
       </div>
