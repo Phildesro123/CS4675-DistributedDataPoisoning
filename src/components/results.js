@@ -23,6 +23,10 @@ import BDMNIST_30 from './graphs/accuracy_MNIST_30Backdoor';
 import BDCifarfed_25 from './graphs/accuracy_Cifarfed_25Backdoor';
 import BDCifarfed_50 from './graphs/accuracy_Cifarfed_50Backdoor';
 import BDCifarfed_75 from './graphs/accuracy_Cifarfed_75Backdoor'; 
+//import AccuracyCompare_MNIST_100 from "./graphs/LF_accuracyCompare_MNIST_100";
+//import AccuracyCompare_MNIST_200 from "./graphs/LF_accuracyCompare_MNIST_200";
+import AccuracyCompare_MNIST_50 from "./graphs/LF_accuracyCompare_MNIST_50";
+
 
 function Results(props) {
     let graph = null;
@@ -40,6 +44,12 @@ function Results(props) {
                             <Defense_MNIST_50/>
                         </Card.Body>
                     </Card>
+                    <Card>
+                        <Card.Header as="h5">Accuracy Comparion with Backdoor Attack</Card.Header>
+                        <Card.Body style={{ backgroundColor: "#CCD4F2"}}>
+                            <AccuracyCompare_MNIST_50/>
+                        </Card.Body>
+                    </Card>
                     </div>
             }
             if (props.epochs === 100) {
@@ -52,6 +62,12 @@ function Results(props) {
                             <Precision_MNIST_100/>
                             <Recall_MNIST_100/>
                             <Defense_MNIST_100/>    
+                        </Card.Body>
+                    </Card>
+                    <Card>
+                        <Card.Header as="h5">Accuracy Comparion with Backdoor Attack</Card.Header>
+                        <Card.Body style={{ backgroundColor: "#CCD4F2"}}>
+                            <AccuracyCompare_MNIST_50/>
                         </Card.Body>
                     </Card>
                 </div>
@@ -68,6 +84,12 @@ function Results(props) {
                             <Defense_MNIST_200/>
                         </Card.Body>
                     </Card>          
+                    <Card>
+                        <Card.Header as="h5">Accuracy Comparion with Backdoor Attack</Card.Header>
+                        <Card.Body style={{ backgroundColor: "#CCD4F2"}}>
+                            <AccuracyCompare_MNIST_50/>
+                        </Card.Body>
+                    </Card>
                 </div>
             } else {
                 return null;
@@ -107,12 +129,15 @@ function Results(props) {
             } else if (props.dataset === 'CIFAR-10') {
                 if (props.epochs === 10) {
                     return <div>
+                        
                     <Card>
                         <Card.Header as="h5">Quantitative Evaluation</Card.Header>
                         <Card.Body style={{ backgroundColor: "#CCD4F2" }}>
                             <BDCifar10_10/>
+                            
                         </Card.Body>
-                    </Card>                          
+                    </Card>       
+                                 
                 </div>
                 } else if (props.epochs === 20) {
                     return <div>
