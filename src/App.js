@@ -1,7 +1,9 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import { Card, Container,Button, Col, Row, Form  } from "react-bootstrap"; 
 import Header from './components/header';
 import Options from './components/options';
 import Results from './components/results';
+import Instructions from './components/instructions';
 import React, { useState, useEffect } from 'react';
 
 function App() {
@@ -25,7 +27,15 @@ function App() {
     <div className="App">
       < Header />
       <Options handleChange = {handleChange}  />
-      <Results {...props}/>
+
+      <Row>
+      <Col><Results {...props}/></Col>
+      <Col><Instructions/></Col>
+      </Row>
+     
+     
+
+      
     </div>
   );
 }

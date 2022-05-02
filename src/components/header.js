@@ -3,9 +3,9 @@ import { Navbar, Container } from "react-bootstrap";
 function Header() {
     return (
       <div className="Header">
-        <Navbar style={{ backgroundColor: "#CCD4F2"}}>    
+        <Navbar style={{ backgroundColor: "#B3A369"}}>    
             <Container>
-                <Navbar.Brand>CS4675 Group 3 Demo</Navbar.Brand>
+                <h1>Data Poisoning Visualization Tool</h1>
             </Container>
         </Navbar>
       </div>

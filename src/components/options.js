@@ -142,7 +142,7 @@ class Options extends Component {
 
           <Row style={{ marginBottom:'40px',textAlign: 'center', paddingLeft: 30, paddingRight: 30}}>
               <Button
-                style={{ backgroundColor: "#98FB98", color: "#000000", outline: 'none'}}
+                style={{ backgroundColor: "#4a77e1", color: "#FFFFFF", outline: 'none'}}
                 type="button"
                 onClick={() => {
                   this.props.handleChange(
