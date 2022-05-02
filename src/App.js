@@ -24,7 +24,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" style={{zoom:.8}}>
       < Header />
       <Options handleChange = {handleChange}  />
 
